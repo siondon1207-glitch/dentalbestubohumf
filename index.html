@@ -1,23 +1,1412 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
+
+
+    <!-- JSON-LD Structured Data: Optimized for AI Overviews, LLM Search, and Crawlers -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "@id": "https://example.com/#website",
+                "url": "https://example.com",
+                "name": "레진치료 보험 비교 분석 센터",
+                "description": "2026년 기준 레진치료 및 치아 보존치료 전문 보험 비교 분석 플랫폼",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "덴탈인슈 리서치랩",
+                    "url": "https://example.com"
+                },
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "https://example.com/?q={search_term_string}",
+                    "query-input": "required name=search_term_string"
+                }
+            },
+            {
+                "@type": "Article",
+                "@id": "https://example.com/resin-insurance#article",
+                "isPartOf": {
+                    "@id": "https://example.com/#website"
+                },
+                "headline": "2026년 레진치료 보험 가입 가이드: 비급여 충치치료 비용과 치아보험 보존치료 특약 비교 분석",
+                "description": "치과 충치 치료에서 가장 빈번하게 시행되는 복합레진 치료의 보험 적용 기준, 주요 보험사별 보장 금액 및 면책·감액 기간, 다이렉트 최저가 요금제 비교 정보를 상세히 분석합니다.",
+                "datePublished": "2026-01-05T09:00:00+09:00",
+                "dateModified": "2026-03-30T14:30:00+09:00",
+                "inLanguage": "ko-KR",
+                "mainEntityOfPage": "https://example.com/resin-insurance",
+                "author": {
+                    "@type": "Organization",
+                    "name": "덴탈인슈 리서치 연구팀"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "덴탈인슈 리서치랩"
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://example.com/resin-insurance#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "성인의 레진치료는 국민건강보험 적용이 되나요?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "성인의 충치 치료를 위한 광중합형 복합레진은 국민건강보험 비급여 항목으로 본인 부담금이 100% 발생합니다. 다만 만 12세 이하 어린이의 영구치 충치 치료에 한하여 건강보험 급여가 적용되어 약 30% 수준의 본인부담금만 발생합니다. 성인의 경우 민간 치아보험의 보존치료(레진) 특약을 통해 비용을 보장받을 수 있습니다."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "레진치료 보험 가입 후 즉시 보장받을 수 있나요?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "대부분의 무진단형 치아보험 상품은 가입일로부터 90일간의 면책기간(보장 제외)이 적용됩니다. 또한 가입 후 1년 또는 2년 미만 시점에는 약정된 보장 금액의 50%만 지급되는 감액기간이 존재하므로, 치료 계획 전 약관의 면책 및 감액 기준을 확인해야 합니다."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "레진치료와 인레이, 온레이 보장의 차이점은 무엇인가요?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "레진치료는 충치 부위를 제거하고 치과용 레진을 직접 충전하는 직접 보존치료이며, 인레이 및 온레이는 본을 떠서 기공소에서 제작 후 부착하는 간접 보존치료입니다. 치아보험에서는 레진치료는 치아당 5만 원~20만 원 내외, 인레이/온레이는 10만 원~30만 원 내외로 차등 보장하는 것이 일반적입니다."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "다이렉트 치아보험으로 가입하면 오프라인 대리점보다 저렴한가요?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "다이렉트 치아보험은 설계사 수수료 및 오프라인 점포 운영비가 제외되므로 동일 보장 기준 오프라인 채널 대비 약 10%~20% 저렴한 보험료로 가입할 수 있어 최저가 요금제를 구성하기에 유리합니다."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+
+    <!-- Preconnect to Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS Layout & Responsive Design -->
+    <style>
+        :root {
+            --primary: #193256;
+            --primary-light: #2c4c77;
+            --accent: #0b72e7;
+            --accent-soft: #eaf3fd;
+            --secondary: #008779;
+            --secondary-soft: #e6f6f4;
+            --warm-accent: #d95c00;
+            --warm-soft: #fff5ed;
+            --bg-base: #f8fafc;
+            --bg-card: #ffffff;
+            --border-color: #e2e8f0;
+            --border-light: #edf2f7;
+            --text-dark: #1e293b;
+            --text-body: #334155;
+            --text-muted: #64748b;
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+            --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.08);
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 18px;
+            --radius-xl: 24px;
+        }
+
+        /* Base Resets */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-base);
+            color: var(--text-body);
+            line-height: 1.8;
+            font-size: 16px;
+            letter-spacing: -0.02em;
+            word-break: keep-all;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5 { color: var(--text-dark); font-weight: 700; line-height: 1.4; }
+        a { text-decoration: none; color: inherit; transition: color 0.2s ease; }
+        ul, ol { list-style: none; }
+        table { width: 100%; border-collapse: collapse; }
+
+        /* Accessibility Sound-Only helper */
+        .soundonly {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+
+        /* Container */
+        .container {
+            width: 100%;
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header Navigation */
+        .header {
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+        }
+        .header-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 72px;
+        }
+        .brand-logo {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .brand-logo span {
+            color: var(--accent);
+            font-weight: 900;
+        }
+        .header-nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .header-nav a {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-body);
+            padding: 8px 12px;
+            border-radius: var(--radius-sm);
+        }
+        .header-nav a:hover {
+            color: var(--accent);
+            background-color: var(--accent-soft);
+        }
+        .header-cta-btn {
+            background-color: var(--accent);
+            color: #ffffff !important;
+            padding: 10px 18px !important;
+            border-radius: 30px;
+            font-weight: 700 !important;
+            transition: background-color 0.25s ease;
+        }
+        .header-cta-btn:hover {
+            background-color: var(--primary) !important;
+        }
+
+        /* Hero Banner Section */
+        .hero-section {
+            background: linear-gradient(135deg, #0d2847 0%, #1a3c69 50%, #205391 100%);
+            color: #ffffff;
+            padding: 70px 0 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .hero-badge {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            color: #dbeafe;
+            font-size: 0.88rem;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            line-height: 1.35;
+            color: #ffffff;
+            margin-bottom: 20px;
+            letter-spacing: -0.03em;
+        }
+        .hero-title .text-point {
+            color: #60a5fa;
+        }
+        .hero-desc {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            line-height: 1.7;
+            margin-bottom: 28px;
+        }
+        .hero-stats {
+            display: flex;
+            gap: 24px;
+            margin-top: 15px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        .stat-item h4 {
+            color: #ffffff;
+            font-size: 1.4rem;
+            font-weight: 800;
+        }
+        .stat-item p {
+            color: #94a3b8;
+            font-size: 0.85rem;
+        }
+
+        /* Lead Form Card (Hero Right & Dedicated Areas) */
+        .lead-card {
+            background-color: var(--bg-card);
+            border-radius: var(--radius-lg);
+            padding: 32px 28px;
+            box-shadow: var(--shadow-lg);
+            color: var(--text-dark);
+            border: 1px solid var(--border-color);
+        }
+        .lead-card-header {
+            text-align: center;
+            margin-bottom: 22px;
+        }
+        .lead-card-header h3 {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+        .lead-card-header p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+        .form-group {
+            margin-bottom: 16px;
+        }
+        .form-label {
+            display: block;
+            font-size: 0.88rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: var(--text-dark);
+        }
+        .form-control {
+            width: 100%;
+            padding: 12px 14px;
+            font-size: 0.95rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            background-color: #f8fafc;
+            color: var(--text-dark);
+            transition: all 0.2s ease;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent);
+            background-color: #ffffff;
+            box-shadow: 0 0 0 3px rgba(11, 114, 231, 0.12);
+        }
+        .phone-row {
+            display: flex;
+            gap: 8px;
+        }
+        .phone-row select {
+            width: 32%;
+        }
+        .phone-row input {
+            width: 68%;
+        }
+        .form-notice {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 6px;
+        }
+        .privacy-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #f1f5f9;
+            padding: 10px 14px;
+            border-radius: var(--radius-sm);
+            font-size: 0.85rem;
+            margin: 18px 0;
+        }
+        .privacy-box label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .btn-view-terms {
+            font-size: 0.8rem;
+            color: var(--accent);
+            text-decoration: underline;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-weight: 700;
+        }
+        .btn-submit {
+            width: 100%;
+            background-color: var(--accent);
+            color: #ffffff;
+            font-size: 1.05rem;
+            font-weight: 800;
+            padding: 14px 20px;
+            border: none;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            box-shadow: 0 4px 14px rgba(11, 114, 231, 0.3);
+            transition: all 0.25s ease;
+        }
+        .btn-submit:hover {
+            background-color: var(--primary);
+            transform: translateY(-1px);
+        }
+
+        /* Quick Feature Badges Section */
+        .feature-strip {
+            background-color: #ffffff;
+            padding: 30px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .feature-card {
+            background-color: var(--bg-base);
+            padding: 20px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-light);
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+        }
+        .feature-tag {
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: var(--accent);
+            background-color: var(--accent-soft);
+            padding: 4px 10px;
+            border-radius: 12px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .feature-card h4 {
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+        }
+        .feature-card p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* Main Content Structure */
+        .content-area {
+            padding: 60px 0 80px;
+        }
+        .article-container {
+            background-color: var(--bg-card);
+            border-radius: var(--radius-xl);
+            padding: 50px 48px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+
+        /* Typography & Section Styles */
+        .section-header {
+            margin-bottom: 36px;
+            border-bottom: 2px solid var(--border-light);
+            padding-bottom: 18px;
+        }
+        .section-header .category-badge {
+            font-size: 0.82rem;
+            font-weight: 800;
+            color: var(--secondary);
+            background-color: var(--secondary-soft);
+            padding: 4px 12px;
+            border-radius: 14px;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .section-header h2 {
+            font-size: 1.85rem;
+            color: var(--primary);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+        }
+        .section-header p {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-top: 6px;
+        }
+
+        .content-body h3 {
+            font-size: 1.35rem;
+            color: var(--primary-light);
+            margin: 36px 0 16px;
+            font-weight: 800;
+            position: relative;
+            padding-left: 14px;
+        }
+        .content-body h3::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 6px;
+            bottom: 6px;
+            width: 5px;
+            background-color: var(--accent);
+            border-radius: 4px;
+        }
+        .content-body h4 {
+            font-size: 1.15rem;
+            color: var(--text-dark);
+            margin: 24px 0 12px;
+            font-weight: 700;
+        }
+        .content-body p {
+            margin-bottom: 18px;
+            font-size: 1.02rem;
+            color: #374151;
+            line-height: 1.85;
+        }
+
+        /* Highlight Boxes */
+        .info-panel {
+            background-color: #f8fafc;
+            border-left: 4px solid var(--accent);
+            padding: 22px 26px;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            margin: 26px 0;
+        }
+        .info-panel.secondary {
+            border-left-color: var(--secondary);
+            background-color: var(--secondary-soft);
+        }
+        .info-panel.warm {
+            border-left-color: var(--warm-accent);
+            background-color: var(--warm-soft);
+        }
+        .info-panel h4 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+        .info-panel p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Rich Data Tables */
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            margin: 28px 0 36px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+            background: #ffffff;
+        }
+        .custom-table {
+            width: 100%;
+            text-align: left;
+            font-size: 0.94rem;
+        }
+        .custom-table th {
+            background-color: #f1f5f9;
+            color: var(--text-dark);
+            font-weight: 700;
+            padding: 14px 18px;
+            border-bottom: 1px solid var(--border-color);
+            white-space: nowrap;
+        }
+        .custom-table td {
+            padding: 14px 18px;
+            border-bottom: 1px solid var(--border-light);
+            color: var(--text-body);
+            vertical-align: middle;
+        }
+        .custom-table tbody tr:nth-child(even) {
+            background-color: #fbfcfe;
+        }
+        .custom-table tbody tr:hover {
+            background-color: #f1f7ff;
+        }
+        .tag-pill {
+            font-size: 0.78rem;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 12px;
+            display: inline-block;
+        }
+        .tag-blue { background-color: #dbeafe; color: #1e40af; }
+        .tag-green { background-color: #dcfce7; color: #166534; }
+        .tag-orange { background-color: #ffedd5; color: #9a3412; }
+
+        /* Custom Lists */
+        .styled-checklist {
+            margin: 18px 0 24px;
+        }
+        .styled-checklist li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 12px;
+            font-size: 0.98rem;
+            color: var(--text-body);
+        }
+        .styled-checklist li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--accent);
+            font-weight: 900;
+            font-size: 1.1rem;
+        }
+
+        /* FAQ Accordion Component */
+        .faq-item {
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            margin-bottom: 14px;
+            overflow: hidden;
+            background-color: #ffffff;
+            transition: border-color 0.2s ease;
+        }
+        .faq-item:hover {
+            border-color: var(--accent);
+        }
+        .faq-question {
+            width: 100%;
+            text-align: left;
+            background-color: #ffffff;
+            padding: 18px 24px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question .indicator {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--accent);
+            transition: transform 0.2s ease;
+        }
+        .faq-answer {
+            padding: 0 24px 20px;
+            font-size: 0.96rem;
+            color: var(--text-body);
+            line-height: 1.8;
+            border-top: 1px solid var(--border-light);
+            display: none;
+            background-color: #fbfcfe;
+        }
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        .faq-item.active .indicator {
+            transform: rotate(45deg);
+        }
+
+        /* External Reference Sources Box */
+        .sources-card {
+            background-color: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            margin: 40px 0 20px;
+        }
+        .sources-card h4 {
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 12px;
+            font-weight: 800;
+        }
+        .sources-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 14px;
+        }
+        .source-link-item {
+            background: #ffffff;
+            padding: 12px 16px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border-light);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.2s ease;
+        }
+        .source-link-item:hover {
+            border-color: var(--accent);
+            background-color: var(--accent-soft);
+        }
+        .source-link-item span {
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: var(--primary-light);
+        }
+        .source-link-item small {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        /* Mid & Bottom Conversion Form Banner */
+        .action-banner {
+            background: linear-gradient(135deg, #1e3a5f 0%, #152943 100%);
+            border-radius: var(--radius-xl);
+            padding: 48px;
+            color: #ffffff;
+            margin: 40px 0;
+            text-align: center;
+        }
+        .action-banner h3 {
+            color: #ffffff;
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+        .action-banner p {
+            color: #cbd5e1;
+            font-size: 1.05rem;
+            margin-bottom: 28px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            padding: 48px 0 36px;
+            font-size: 0.85rem;
+            border-top: 1px solid #1e293b;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        .footer-info h5 {
+            color: #ffffff;
+            font-size: 1rem;
+            margin-bottom: 12px;
+        }
+        .footer-info p {
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+        .footer-links h5 {
+            color: #ffffff;
+            font-size: 1rem;
+            margin-bottom: 12px;
+        }
+        .footer-links ul li {
+            margin-bottom: 6px;
+        }
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+        .footer-bottom {
+            padding-top: 20px;
+            border-top: 1px solid #1e293b;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 23, 42, 0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            padding: 20px;
+        }
+        .modal-card {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 650px;
+            max-height: 85vh;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: var(--shadow-lg);
+        }
+        .modal-header {
+            padding: 18px 24px;
+            background-color: #f8fafc;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .modal-header h4 {
+            margin: 0;
+            font-size: 1.15rem;
+            color: var(--primary);
+        }
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-muted);
+        }
+        .modal-body {
+            padding: 24px;
+            overflow-y: auto;
+            font-size: 0.88rem;
+            color: var(--text-body);
+            line-height: 1.7;
+        }
+        .modal-body .terms-section {
+            background-color: #f8fafc;
+            border: 1px solid var(--border-light);
+            padding: 14px;
+            border-radius: var(--radius-sm);
+            margin-bottom: 12px;
+        }
+        .modal-body .terms-title {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+        .modal-footer {
+            padding: 14px 24px;
+            background-color: #f8fafc;
+            border-top: 1px solid var(--border-color);
+            text-align: right;
+        }
+        .btn-confirm-modal {
+            background-color: var(--primary);
+            color: #ffffff;
+            padding: 10px 24px;
+            border-radius: var(--radius-sm);
+            border: none;
+            cursor: pointer;
+            font-weight: 700;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 992px) {
+            .hero-grid { grid-template-columns: 1fr; gap: 30px; }
+            .feature-grid { grid-template-columns: repeat(2, 1fr); }
+            .article-container { padding: 36px 24px; }
+            .hero-title { font-size: 2.1rem; }
+            .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+        }
+        @media (max-width: 600px) {
+            .hero-title { font-size: 1.75rem; }
+            .feature-grid { grid-template-columns: 1fr; }
+            .header-nav { display: none; }
+            .action-banner { padding: 30px 20px; }
+            .article-container { padding: 26px 16px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-wrap">
+            <a href="/" class="brand-logo" title="덴탈케어 레진보험 비교센터 메인으로 이동">
+                <span>DENTAL</span>INSURE
+            </a>
+            <nav class="header-nav">
+                <a href="#section-guide">레진치료 보장기준</a>
+                <a href="#section-compare">2026 보험료 비교</a>
+                <a href="#section-faq">자주 묻는 질문</a>
+                <a href="#mainForm" class="header-cta-btn">내 예상 보험료 조회</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
     <main>
-      <h1>Home page</h1>
+        <!-- Hero Section with Integrated Consultation Form -->
+        <section class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="hero-badge">2026년 최신 치아 보존치료 가이드</span>
+                    <h1 class="hero-title">
+                        부담되는 충치 치료비,<br>
+                        <span class="text-point">레진치료 보험 비교</span>로 똑똑하게 절약하세요
+                    </h1>
+                    <p class="hero-desc">
+                        비급여 광중합형 복합레진부터 인레이, 온레이, 크라운까지. 2026년 주요 보험사별 보존치료 특약 요금제와 보장 금액을 실시간으로 비교하고 가장 합리적인 최저가 견적을 확인해보세요.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h4>90일</h4>
+                            <p>면책기간 최소화 플랜</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>최대 20만 원</h4>
+                            <p>레진 치아당 보장 한도</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>10~20%</h4>
+                            <p>다이렉트 가입 할인 혜택</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fast Lead Form (S01) -->
+                <div class="lead-card" id="mainForm">
+                    <div class="lead-card-header">
+                        <h3>레진치료 맞춤 견적 계산기</h3>
+                        <p>간단한 정보 입력으로 주요 보험사별 보험료를 즉시 산출합니다.</p>
+                    </div>
+                    <form id="leadFormS01" onsubmit="return false;">
+                        <div class="form-group">
+                            <label for="frmS01Name" class="form-label">이름</label>
+                            <input type="text" id="frmS01Name" name="frmS01Name" class="form-control" placeholder="성함을 입력해주세요" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="frmS01Mphone" class="form-label">연락처</label>
+                            <div class="phone-row">
+                                <select id="phoneHeadS01" class="form-control phoneHeadSelector_m" aria-label="연락처 앞자리">
+                                    <option value="010" selected>010</option>
+                                    <option value="011">011</option>
+                                    <option value="016">016</option>
+                                    <option value="017">017</option>
+                                    <option value="018">018</option>
+                                    <option value="019">019</option>
+                                </select>
+                                <input type="tel" id="frmS01Mphone" name="frmS01Mphone" class="form-control" placeholder="휴대폰 번호 (숫자만)" maxlength="8" required>
+                            </div>
+                            <div class="form-notice">입력하신 번호는 견적 안내 및 본인 확인용으로만 활용됩니다.</div>
+                        </div>
+                        <div class="privacy-box">
+                            <label>
+                                <input type="checkbox" id="privacyAgreeS01" class="checkMain">
+                                <span>개인정보 수집 및 이용 동의</span>
+                            </label>
+                            <button type="button" class="btn-view-terms" onclick="openPrivacyModal()">약관보기</button>
+                        </div>
+                        <button type="button" id="btnSubmitS01" class="btn-submit">내 레진치료 보험료 무료 견적받기</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Highlights Section -->
+        <section class="feature-strip">
+            <div class="container">
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <span class="feature-tag">보장 범위 분석</span>
+                        <h4>충치치료 집중 보장</h4>
+                        <p>초기 충치 레진 충전부터 인레이, 온레이까지 단계별 보장 금액을 안내합니다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-tag">비용 절감</span>
+                        <h4>다이렉트 최저가</h4>
+                        <p>중간 수수료 없는 온라인 다이렉트 전용 상품으로 알뜰한 요금제를 설계합니다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-tag">청구 편의성</span>
+                        <h4>간편 모바일 접수</h4>
+                        <p>치과 치료 확인서와 영수증 사진 한 장으로 앱이나 어플을 통해 당일 접수가 가능합니다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-tag">맞춤형 컨설팅</span>
+                        <h4>1:1 전문가 비교</h4>
+                        <p>갱신형과 비갱신형, 진단형과 무진단형의 장단점을 객관적으로 비교 분석합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Editorial & SEO Content Section -->
+        <div class="content-area">
+            <div class="container">
+
+                <!-- Article 1: Core Definitions and 2026 Market Changes -->
+                <article class="article-container" id="section-guide">
+                    <header class="section-header">
+                        <span class="category-badge">보존치료 완벽 가이드</span>
+                        <h2>레진치료 보험이란? 건강보험 적용 기준과 민간 치아보험 비교</h2>
+                        <p>2026년 기준 복합레진 치료의 급여·비급여 분류 및 실손의료비 연계성 총정리</p>
+                    </header>
+
+                    <div class="content-body">
+                        <p>
+                            치과 질환 중 가장 흔하게 발생하는 충치(치아우식증)와 치경부 마모증 치료에서 가장 널리 활용되는 치료법은 단연 <strong>복합레진(Composite Resin)</strong> 충전입니다. 자연 치아와 유사한 색상과 우수한 접착력을 지녀 심미적, 기능적으로 만족도가 높지만, 대다수의 성인 환자에게는 비급여 항목으로 적용되어 치료비 전액을 본인이 부담해야 하는 경제적 부담이 있습니다.
+                        </p>
+                        <p>
+                            치아보험의 <strong>레진치료 보장 특약</strong>은 이러한 비급여 보존치료 비용을 정액으로 보장해 주는 핵심 특약입니다. 치과 의원에서 레진 치료를 받은 후 치료 부위와 개수에 따라 약정된 보험금을 지급받을 수 있으며, 아말감이나 글래스 아아이오노머(GI)와 같은 급여 치료부터 광중합형 레진, 인레이, 온레이, 크라운에 이르기까지 폭넓은 충치치료를 대비할 수 있습니다.
+                        </p>
+
+                        <div class="info-panel">
+                            <h4>2026년 국민건강보험 복합레진 급여화 기준 안내</h4>
+                            <p>
+                                국민건강보험법에 따라 <strong>만 12세 이하 소아 및 청소년</strong>의 경우, 충치로 인한 영구치 광중합형 복합레진 치료 시 건강보험 급여가 적용됩니다. 이 경우 총 진료비의 약 30% 수준인 치아당 2만 원~3만 원 안팎의 본인부담금만 발생합니다. 하지만 <strong>만 13세 이상 청소년 및 성인</strong>의 광중합 레진 치료는 전액 비급여로 분류되어 치아당 7만 원에서 15만 원 수준의 치료비가 발생하므로 민간 치아보험을 통한 사전 대비가 필수적입니다.
+                            </p>
+                        </div>
+
+                        <h3>레진치료와 주요 보존치료 종류 및 치료비 비교</h3>
+                        <p>
+                            충치의 진행 단계와 손상 범위에 따라 치료 방법과 평균 비용은 크게 달라집니다. 초기 법랑질과 상아질 일부에 국한된 손상은 복합레진 충전으로 당일 치료가 가능하지만, 손상 부위가 넓어지면 본을 떠서 부착하는 인레이나 온레이, 치수를 침범한 경우 신경치료 후 치아 전체를 씌우는 크라운 치료가 필요합니다.
+                        </p>
+
+                        <div class="table-responsive">
+                            <table class="custom-table">
+                                <thead>
+                                    <tr>
+                                        <th>치료 종류</th>
+                                        <th>치료 방식 및 재료 특성</th>
+                                        <th>평균 치료 비용 (치아 1개당)</th>
+                                        <th>건강보험 적용 여부</th>
+                                        <th>치아보험 보장 금액 (평균)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>직접 복합레진</strong></td>
+                                        <td>충치 제거 후 치과용 레진을 직접 메우는 치료</td>
+                                        <td>8만 원 ~ 15만 원</td>
+                                        <td><span class="tag-pill tag-orange">만 12세 이하만 급여</span></td>
+                                        <td>5만 원 ~ 20만 원 정액 보장</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>글래스 아이오노머(GI)</strong></td>
+                                        <td>불소 방출 기능이 있는 치과 시멘트 충전재</td>
+                                        <td>1만 원 ~ 2만 원</td>
+                                        <td><span class="tag-pill tag-green">전 연령 건강보험 급여</span></td>
+                                        <td>1만 원 ~ 3만 원 정액 보장</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>인레이 / 온레이</strong></td>
+                                        <td>금, 세라믹, 레진 등을 기공소에서 제작하여 부착</td>
+                                        <td>20만 원 ~ 35만 원</td>
+                                        <td><span class="tag-pill tag-orange">전액 비급여</span></td>
+                                        <td>10만 원 ~ 30만 원 정액 보장</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>크라운(Crown)</strong></td>
+                                        <td>신경치료 후 PFM, 지르코니아, 골드로 치아 전체 보호</td>
+                                        <td>40만 원 ~ 70만 원</td>
+                                        <td><span class="tag-pill tag-orange">전액 비급여</span></td>
+                                        <td>20만 원 ~ 50만 원 정액 보장</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>
+                            위 표에서 확인할 수 있듯이 충치 3~4개를 한꺼번에 레진으로 치료할 경우 본인 부담 비용은 40만 원에서 60만 원에 달할 수 있습니다. 특히 20대와 30대 사회초년생이나 당분 섭취가 잦은 직장인들의 경우 주기적인 스케일링 검진 시 복수의 충치가 발견되는 사례가 많아 레진치료 보험 가입을 통한 리스크 분산 효과가 매우 큽니다.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Article 2: In-depth Policy Analysis, Deductibles, and Terms -->
+                <article class="article-container" id="section-compare">
+                    <header class="section-header">
+                        <span class="category-badge">약관 분석 및 절약 팁</span>
+                        <h2>레진치료 보험 가입 전 반드시 확인해야 할 5가지 핵심 체크리스트</h2>
+                        <p>면책기간, 감액기간, 연간 보장 한도 및 갱신형·비갱신형 장단점 심층 분석</p>
+                    </header>
+
+                    <div class="content-body">
+                        <p>
+                            많은 소비자들이 인터넷 커뮤니티인 디시인사이드 치아보험 갤러리, 에펨코리아(펨코), 보배드림 등에서 "치아보험 가입 후 바로 레진 치료를 받아도 보험금이 나오나요?"라는 질문을 자주 남깁니다. 결론부터 말씀드리면, 치아보험은 가입 즉시 보장이 개시되는 것이 아니라 도덕적 해이를 방지하기 위한 <strong>면책기간</strong>과 <strong>감액기간</strong>이 존재합니다.
+                        </p>
+
+                        <div class="info-panel warm">
+                            <h4>치아보험 가입 시 필수 확인 규정</h4>
+                            <ul class="styled-checklist">
+                                <li><strong>면책기간(90일):</strong> 계약일로부터 90일 이내에 발생한 충치 치료는 보험금이 지급되지 않습니다 (상해로 인한 파절은 즉시 보장).</li>
+                                <li><strong>감액기간(1년~2년):</strong> 계약일로부터 1년 또는 2년 미만 기간에는 약정 보험금의 50%만 지급됩니다.</li>
+                                <li><strong>연간 보장 한도:</strong> 레진이나 인레이 같은 보존치료는 연간 무제한 보장 상품이 많으나, 일부 상품은 연간 3개 또는 5개로 제한될 수 있습니다.</li>
+                                <li><strong>기왕증 및 고지의무:</strong> 최근 1년 이내 충치 치료 이력, 최근 5년 이내 치주질환으로 인한 영구치 발치 이력은 사실대로 고지해야 합니다.</li>
+                            </ul>
+                        </div>
+
+                        <h3>갱신형 vs 비갱신형 요금제 장단점 비교</h3>
+                        <p>
+                            치아보험의 요금제는 크게 일정 주기(3년, 5년, 10년)마다 연령 증가와 손해율을 반영하여 보험료가 재산출되는 <strong>갱신형</strong>과, 가입 시점의 요금이 만기(예: 80세)까지 동일하게 유지되는 <strong>비갱신형</strong>으로 나뉩니다.
+                        </p>
+                        <p>
+                            레진치료나 인레이 등 보존치료는 20대부터 40대까지 왕성하게 발생하는 반면, 임플란트나 틀니 같은 고액의 보철치료는 50대 이후 수요가 급증합니다. 따라서 젊은 층에서 단기적으로 충치 치료 집중 보장을 원할 경우 초기 월 납입료가 가장 저렴한 3년 또는 5년 만기 갱신형 다이렉트 상품을 선택하고, 1년에서 2년 유지 후 치료를 마친 뒤 리모델링하는 전략이 경제적입니다.
+                        </p>
+
+                        <div class="table-responsive">
+                            <table class="custom-table">
+                                <thead>
+                                    <tr>
+                                        <th>비교 항목</th>
+                                        <th>다이렉트 갱신형 치아보험</th>
+                                        <th>비갱신형 표준 치아보험</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>초기 월 납입료</strong></td>
+                                        <td>월 1만 원대 ~ 3만 원대 (매우 저렴)</td>
+                                        <td>월 4만 원대 ~ 7만 원대 (상대적 높음)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>보험료 변동 여부</strong></td>
+                                        <td>갱신 주기마다 인상 가능성 있음</td>
+                                        <td>만기까지 가입 금액 그대로 고정</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>추천 대상</strong></td>
+                                        <td>20~40대 충치·레진 단기 집중 대비 목적</td>
+                                        <td>50대 이상 노후 임플란트·보철 장기 유지 목적</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>해지환급금 구조</strong></td>
+                                        <td>순수보장형 (만기 환급금 없음, 위약금 없음)</td>
+                                        <td>일부 환급형 가능 (해약환급금 발생)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3>모바일 앱과 온라인 다이렉트를 통한 최저가 가입 및 청구 방법</h3>
+                        <p>
+                            최근에는 카카오톡, 토스(Toss), 네이버페이, 금융사 공식 어플(App)을 통해 복잡한 서류 제출 없이 스마트폰 카메라로 치과 치료 확인서와 진료비 영수증을 업로드하면 1~3영업일 내에 보험금이 신속하게 입금되는 간편 청구 시스템이 정착되었습니다.
+                        </p>
+                        <p>
+                            또한 AI 검색 엔진인 챗지피티(ChatGPT), 제미나이(Gemini), 네이버 AI 검색 탭 등을 활용하여 각 보험사의 약관 파일과 특약별 보장 조건을 교차 검증하는 스마트 소비자가 늘고 있습니다. 불필요한 약정 기간이나 과도한 계약금 조건 없이 무약정 또는 12개월 단기 유지 기준을 세우고, 온라인 다이렉트 사이트를 통해 성지 좌표나 할인 혜택을 비교하면 오프라인 대비 연간 수십만 원의 고정 비용을 절감할 수 있습니다.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Mid-Article Interactive Form / Conversion Area -->
+                <section class="action-banner">
+                    <h3>내 치아 상태에 맞는 1:1 맞춤 견적 확인</h3>
+                    <p>전문 상담을 통해 불필요한 특약은 제외하고 레진·보존치료 최저가 플랜을 산출해 드립니다.</p>
+                    <div style="max-width: 500px; margin: 0 auto;">
+                        <button type="button" class="btn-submit" style="background-color: #ffffff; color: var(--primary); font-size: 1.1rem;" onclick="document.getElementById('mainForm').scrollIntoView({behavior: 'smooth'})">
+                            실시간 최저가 보험료 계산하러 가기
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Article 3: Deep Dive FAQ and Community Real Reviews -->
+                <article class="article-container" id="section-faq">
+                    <header class="section-header">
+                        <span class="category-badge">궁금증 완벽 해결</span>
+                        <h2>레진치료 보험 관련 자주 묻는 질문 (FAQ) 및 실사용자 후기 분석</h2>
+                        <p>내돈내산 후기와 커뮤니티 데이터 분석을 바탕으로 정리한 실전 질의응답</p>
+                    </header>
+
+                    <div class="content-body">
+                        <div class="faq-item active">
+                            <button type="button" class="faq-question" onclick="toggleFaq(this)">
+                                <span>Q1. 치과에서 충치 진단을 받고 난 후 가입해도 보장받을 수 있나요?</span>
+                                <span class="indicator">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                이미 치과 병·의원에서 충치 진단을 받았거나 치료가 필요하다는 의사 소견을 들은 상태에서 보험에 가입할 경우 고지의무 위반에 해당할 수 있습니다. 고지의무를 위반하고 가입하면 추후 보험금 지급이 거절되거나 계약이 강제 해지될 수 있으므로, 반드시 정기 검진 전이나 치아 건강 상태가 양호할 때 미리 가입해 두는 것이 안전합니다.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button type="button" class="faq-question" onclick="toggleFaq(this)">
+                                <span>Q2. 실손의료비보험(실비)에서 성인 레진치료비가 보상되나요?</span>
+                                <span class="indicator">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                표준 실손의료보험 약관상 치과 치료 중 국민건강보험이 적용되는 급여 항목의 본인부담금은 보상 대상이지만, 비급여 치료(성인 레진, 인레이, 크라운, 임플란트 등)는 전액 면책(보상 제외) 항목으로 지정되어 있습니다. 따라서 비급여 레진 치료비를 돌려받기 위해서는 실비 외에 별도의 민간 치아보험 보존치료 특약이 반드시 필요합니다.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button type="button" class="faq-question" onclick="toggleFaq(this)">
+                                <span>Q3. 레진 치료 청구 시 치과에서 발급받아야 할 필수 서류는 무엇인가요?</span>
+                                <span class="indicator">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                1) 보험사 양식의 치과치료 확인서(의사 서명 및 치아 번호, 치료 재료 명시)<br>
+                                2) 진료비 세부내역서<br>
+                                3) 진료비 계산서 및 영수증<br>
+                                4) 치료 전후 치아 파노라마 엑스레이(X-ray) 사진 (일부 보험사 요청 시)<br>
+                                위 서류를 발급받아 모바일 앱이나 홈페이지를 통해 사진 촬영 후 업로드하면 간편하게 접수할 수 있습니다.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button type="button" class="faq-question" onclick="toggleFaq(this)">
+                                <span>Q4. 사은품이나 현금지원, 상품권 이벤트 가입 시 주의할 점은?</span>
+                                <span class="indicator">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                보험업법상 일정 금액을 초과하는 특별이익(과도한 현금지원, 사은품 등) 제공은 엄격히 금지되어 있습니다. 온라인 커뮤니티나 SNS(인스타그램, 페이스북, 유튜브, 텔레그램 등)에서 불법 리베이트를 미끼로 장기 유지를 강요하거나 불리한 특약을 끼워 파는 경우가 있으므로, 객관적인 보장 내역과 월 납입료 자체를 최저가로 낮춘 정식 다이렉트 플랫폼을 이용하는 것이 바람직합니다.
+                            </div>
+                        </div>
+
+                        <h3>실제 가입자들의 내돈내산 후기 및 커뮤니티 트렌드</h3>
+                        <p>
+                            보배드림 및 펨코 등 주요 온라인 커뮤니티의 실사용자 후기를 종합해 보면, "평소 칫솔질을 꼼꼼히 해도 어금니 사이 인접면 충치는 눈에 띄지 않게 진행되어 치과에 갔다가 레진 견적만 60만 원이 나와 당황했다"는 사례가 많습니다. 사전에 월 2만 원대 다이렉트 치아보험에 가입하여 90일 면책기간과 1년 감액기간을 채운 뒤 치료를 받아 총 40만 원 이상의 보험금을 환급받았다는 성공적인 후기가 높은 공감을 얻고 있습니다.
+                        </p>
+                        <p>
+                            결국 치아보험은 장기적인 저축 상품이 아닌, 충치 발생률이 높은 시기에 맞춰 가성비 있게 위험을 헤지(Hedge)하는 생활밀착형 보장성 상품으로 접근하는 것이 현명한 소비 방법입니다.
+                        </p>
+
+                        <!-- Trusted External Reference Sources (Mandatory Reliable Links) -->
+                        <div class="sources-card">
+                            <h4>공인된 치아 건강 및 보험 공공 정보 출처</h4>
+                            <div class="sources-list">
+                                <a href="https://dentalbestubohumg.directreliable.com" target="_blank" rel="noopener" class="source-link-item">
+                                    <span>Reliabledone 덴탈케어 가이드</span>
+                                    <small>비급여 레진 치료 기준 분석 바로가기</small>
+                                </a>
+                                <a href="https://namu.wiki/w/%EC%B9%98%EC%95%84%EB%B3%B4%ED%97%98" target="_blank" rel="noopener" class="source-link-item">
+                                    <span>나무위키 치아보험 백과</span>
+                                    <small>치아보험 구조 및 보존·보철 개념</small>
+                                </a>
+                                <a href="https://www.nhis.or.kr/" target="_blank" rel="noopener" class="source-link-item">
+                                    <span>국민건강보험공단 (NHIS)</span>
+                                    <small>소아 영구치 레진 급여화 정책 기준</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Secondary Conversion Lead Form (S02) -->
+                <div class="lead-card" style="max-width: 720px; margin: 0 auto;">
+                    <div class="lead-card-header">
+                        <h3>2026 다이렉트 레진보험 다모아 비교</h3>
+                        <p>원하시는 보장 범위와 나이에 맞는 최저가 요금제를 산출해 드립니다.</p>
+                    </div>
+                    <form id="leadFormS02" onsubmit="return false;">
+                        <div class="form-group">
+                            <label for="frmS02Name" class="form-label">신청자 성명</label>
+                            <input type="text" id="frmS02Name" name="frmS02Name" class="form-control" placeholder="성함을 입력해주세요" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="frmS02Mphone" class="form-label">휴대전화 번호</label>
+                            <div class="phone-row">
+                                <select id="phoneHeadS02" class="form-control phoneHeadSelector" aria-label="휴대폰 앞자리">
+                                    <option value="010" selected>010</option>
+                                    <option value="011">011</option>
+                                    <option value="016">016</option>
+                                    <option value="017">017</option>
+                                    <option value="018">018</option>
+                                    <option value="019">019</option>
+                                </select>
+                                <input type="tel" id="frmS02Mphone" name="frmS02Mphone" class="form-control phoneInput" placeholder="12345678" maxlength="8" required>
+                            </div>
+                        </div>
+                        <div class="privacy-box">
+                            <label>
+                                <input type="checkbox" id="privacyAgreeS02" class="checkMain">
+                                <span>개인정보 취급위탁 및 상담 안내 동의</span>
+                            </label>
+                            <button type="button" class="btn-view-terms" onclick="openPrivacyModal()">전문보기</button>
+                        </div>
+                        <button type="button" id="btnSubmitS02" class="btn-submit">무료 비교견적서 신청하기</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
     </main>
-  </body>
-</html>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h5>덴탈케어 레진치료 보험 비교 리서치랩</h5>
+                    <p>본 사이트는 소비자의 합리적인 금융 상품 선택을 돕기 위해 2026년 기준 공시 자료와 약관을 객관적으로 비교 분석하여 정보를 제공합니다.</p>
+                    <p>보험 계약 체결 전 반드시 해당 상품의 약관 및 상품설명서를 확인하시기 바랍니다. 보험금 지급 여부는 가입 시점의 약관과 개인의 치료 이력에 따라 상이할 수 있습니다.</p>
+                </div>
+                <div class="footer-links">
+                    <h5>고객센터 및 정책</h5>
+                    <ul>
+                        <li>전화 상담: 1588-0000 (평일 09:00 ~ 18:00)</li>
+                        <li><a href="javascript:void(0);" onclick="openPrivacyModal()">개인정보 처리방침</a></li>
+                        <li><a href="javascript:void(0);" onclick="openPrivacyModal()">이용약관</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright 2026 DENTALINSURE Research All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div class="modal-overlay" id="privacyModal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h4>개인정보 수집·이용 및 제공 동의서</h4>
+                <button type="button" class="modal-close" onclick="closePrivacyModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="terms-section">
+                    <div class="terms-title">1. 개인정보의 수집 및 이용 목적</div>
+                    <p>다이렉트 레진치료 보험 및 치아보험 상품 비교 견적 제공, 맞춤형 보험료 산출 안내, 상담 신청 접수 및 고객 문의 응대.</p>
+                </div>
+                <div class="terms-section">
+                    <div class="terms-title">2. 수집하는 개인정보 항목</div>
+                    <p>성명, 휴대전화번호, 생년월일, 상담 희망 상품군 및 접수 일시.</p>
+                </div>
+                <div class="terms-section">
+                    <div class="terms-title">3. 개인정보의 보유 및 이용 기간</div>
+                    <p>상담 동의일로부터 3년간 보관 후 재생 불가능한 방법으로 안전하게 파기됩니다. (고객의 삭제 요청 시 즉시 파기 처리)</p>
+                </div>
+                <div class="terms-section">
+                    <div class="terms-title">4. 동의 거부권 및 불이익</div>
+                    <p>귀하는 개인정보 수집 및 이용에 대한 동의를 거부할 권리가 있으며, 동의 거부 시 무료 비교견적 및 상담 서비스 제공이 제한될 수 있습니다.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-confirm-modal" onclick="acceptPrivacyAndClose()">동의 및 닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts: jQuery & Frontend Interactions -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // FAQ Accordion Handler
+        function toggleFaq(btn) {
+            const item = btn.parentElement;
+            const isActive = item.classList.contains('active');
+            
+            // Close all
+            document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('active'));
+            
+            // Toggle clicked
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        }
+
+        // Privacy Modal Functions
+        function openPrivacyModal() {
+            document.getElementById('privacyModal').style.display = 'flex';
+        }
+        function closePrivacyModal() {
+            document.getElementById('privacyModal').style.display = 'none';
+        }
+        function acceptPrivacyAndClose() {
+            document.getElementById('privacyAgreeS01').checked = true;
+            document.getElementById('privacyAgreeS02').checked = true;
+            closePrivacyModal();
+        }
+
+        // Window Click to close modal
+        window.onclick = function(event) {
+            const modal = document.getElementById('privacyModal');
+            if (event.target === modal) {
+                closePrivacyModal();
+            }
+        };
+
+        // Form Validation and Submission Handlers
+        $(document).ready(function () {
+            // Numbers only for phone inputs
+            $("input[type=tel], .phoneInput").on("keyup", function () {
+                var inputVal = $(this).val();
+                $(this).val(inputVal.replace(/[^0-9]/gi, ''));
+            });
+
+            // S01 Button Click
+            $("#btnSubmitS01").on("click", function () {
+                const name = $("#frmS01Name").val().trim();
+                const phoneHead = $("#phoneHeadS01").val();
+                const phoneBody = $("#frmS01Mphone").val().trim();
+                const fullPhone = phoneHead + phoneBody;
+                const isChecked = $("#privacyAgreeS01").prop("checked");
+
+                if (!name) {
+                    alert("성함을 입력해주세요.");
+                    $("#frmS01Name").focus();
+                    return;
+                }
+                if (!phoneBody || phoneBody.length < 7) {
+                    alert("올바른 연락처를 입력해주세요.");
+                    $("#frmS01Mphone").focus();
+                    return;
+                }
+                if (!isChecked) {
+                    alert("개인정보 수집 및 이용에 동의하셔야 견적 조회가 가능합니다.");
+                    openPrivacyModal();
+                    return;
+                }
+
+                submitLeadData(1, name, fullPhone);
+            });
+
+            // S02 Button Click
+            $("#btnSubmitS02").on("click", function () {
+                const name = $("#frmS02Name").val().trim();
+                const phoneHead = $("#phoneHeadS02").val();
+                const phoneBody = $("#frmS02Mphone").val().trim();
+                const fullPhone = phoneHead + phoneBody;
+                const isChecked = $("#privacyAgreeS02").prop("checked");
+
+                if (!name) {
+                    alert("성함을 입력해주세요.");
+                    $("#frmS02Name").focus();
+                    return;
+                }
+                if (!phoneBody || phoneBody.length < 7) {
+                    alert("올바른 연락처를 입력해주세요.");
+                    $("#frmS02Mphone").focus();
+                    return;
+                }
+                if (!isChecked) {
+                    alert("개인정보 수집 및 이용에 동의하셔야 견적 조회가 가능합니다.");
+                    openPrivacyModal();
+                    return;
+                }
+
+                submitLeadData(2, name, fullPhone);
+            });
+        });
+
+        // Lead Data Submission Function
+        function submitLeadData(formType, userName, userPhone) {
+            // Simulated submission handler with feedback
+            alert(userName + "님, 레진치료 보험 비교견적 신청이 정상 접수되었습니다. 잠시 후 전문 컨설턴트가 최적의 요금제 안내를 도와드립니다.");
+            
+            // Clear inputs
+            if (formType === 1) {
+                $("#frmS01Name").val('');
+                $("#frmS01Mphone").val('');
+                $("#privacyAgreeS01").prop('checked', false);
+            } else {
+                $("#frmS02Name").val('');
+                $("#frmS02Mphone").val('');
+                $("#privacyAgreeS02").prop('checked', false);
+            }
+        }
+    </script>
+  
